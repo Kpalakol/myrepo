@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.about-me {
+	font-family: Arial, sans-serif;
+   margin: 0;
+  padding: 0;
+}
+
+.main-heading {
+ background-color: #333;
+    font-size: 24px;
+    font-family: Sans-Serif;
+}
+.go-back{
+	border-radius:10px;
+	Padding:15px;
+	
+}
+
+.project1{
+	color:blue;
+	font-size: 24px;
+    font-family: Sans-Serif;
+}
+.project2{
+	color:blue;
+	font-size: 24px;
+    font-family: Sans-Serif;
+}
+.Technical-Skills{
+	text-decoration:underline;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#sectionindex{
+	font-family: Arial;
+	font-size: 24px;
+}
+
+
+#sectioncontact{
+	font-family: Arial;
+	font-size: 24px;
+}
+
+
+#sectionresume{
+	font-family: Arial;
+	font-size: 24px;
+}
+
+#sectionMainMenu{
+	font-family: Arial;
+	font-size: 24px;
+}

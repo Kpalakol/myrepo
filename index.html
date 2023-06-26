@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <input type="text" pattern="[0-9√]*" id="result" readonly>
+        <div class="row">
+            <button class="gray" onclick="clearAll()">AC</button>
+            <button class="gray" onclick="clearLast()">C</button>
+            <button class="gray" onclick="appendToResult('%')">%</button>
+            <button class="orange" onclick="appendToResult('/')">÷</button>
+            <button class="green" onclick="appendToResult('√')">√</button>
+            <button class="green" onclick="calculateTrigFunction('sin')">sin</button>
+            <button class="green" onclick="calculateTrigFunction('cos')">cos</button>
+            <button class="green" onclick="calculateTrigFunction('tan')">tan</button>
+            <button class="green" onclick="appendToResult('^')">^</button>
+        </div>
+        <div class="row">
+            <button onclick="appendToResult('7')">7</button>
+            <button onclick="appendToResult('8')">8</button>
+            <button onclick="appendToResult('9')">9</button>
+            <button class="orange" onclick="appendToResult('*')">x</button>
+        </div>
+        <div class="row">
+            <button onclick="appendToResult('4')">4</button>
+            <button onclick="appendToResult('5')">5</button>
+            <button onclick="appendToResult('6')">6</button>
+            <button class="orange" onclick="appendToResult('-')">-</button>
+        </div>
+        <div class="row">
+            <button onclick="appendToResult('1')">1</button>
+            <button onclick="appendToResult('2')">2</button>
+            <button onclick="appendToResult('3')">3</button>
+            <button class="orange" onclick="appendToResult('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="zero" onclick="appendToResult('0')">0</button>
+            <button onclick="appendToResult('.')">.</button>
+            <button class="orange" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

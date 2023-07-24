@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Let's get Registered</h1>
+    <h4>A hidden way to a new world in a minute</h4>
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+    <form action="/signup" method="POST">
+        <div>
+            <label for="first_name">Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+        <div>
+            <label for="last_name">Last Name</label> Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+        <div>
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+        <input type="submit" value="Sign Up">
+    </form>
+    <p class="line">Already have an account? <a href="{{ url_for('signin') }}"><b><ul>Sign In</ul></b></a></p>
+</body>
+</html>
